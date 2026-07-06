@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pilgrims Lodge — Christian Retreat & Accommodation, Ekpoma" },
+      { title: "Pilgrims Guest House — Christian Retreat & Accommodation, Ekpoma" },
       {
         name: "description",
         content:
-          "Pilgrims Lodge by MBEFAC: a peaceful Christian retreat and accommodation centre in Ekpoma, Edo State for prayer, Bible study, conferences and rest.",
+          "Pilgrims Guest House by MBEFAC: a peaceful Christian retreat and accommodation centre in Ekpoma, Edo State for prayer, Bible study, conferences and rest.",
       },
       { name: "author", content: "Maranatha Beauty For Ashes Club (MBEFAC)" },
-      { property: "og:title", content: "Pilgrims Lodge — A Christian Retreat & Spiritual Haven" },
+      { property: "og:title", content: "Pilgrims Guest House — A Christian Retreat & Spiritual Haven" },
       {
         property: "og:description",
         content:

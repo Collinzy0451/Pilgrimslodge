@@ -8,9 +8,9 @@ import { SITE, waLink, mailLink } from "@/lib/site";
 export const Route = createFileRoute("/reservations")({
   head: () => ({
     meta: [
-      { title: "Reserve a Room — Pilgrims Lodge" },
-      { name: "description", content: "Reserve your room or retreat at Pilgrims Lodge. Send your details directly via WhatsApp or email." },
-      { property: "og:title", content: "Reservations — Pilgrims Lodge" },
+      { title: "Reserve a Room — Pilgrims Guest House" },
+      { name: "description", content: "Reserve your room or retreat at Pilgrims Guest House. Send your details directly via WhatsApp or email." },
+      { property: "og:title", content: "Reservations — Pilgrims Guest House" },
     ],
   }),
   component: Reservations,
@@ -35,7 +35,7 @@ function Reservations() {
 
   const buildMessage = () => {
     return [
-      `*New Reservation Request — Pilgrims Lodge*`,
+      `*New Reservation Request — Pilgrims Guest House*`,
       ``,
       `• Full Name: ${form.fullName}`,
       `• Phone: ${form.phone}`,
@@ -163,13 +163,13 @@ function Reservations() {
               <p className="mt-2 text-sm text-muted-foreground">Reach us directly any time:</p>
               <ul className="mt-4 space-y-3 text-sm">
                 <li><strong>Phone:</strong> <a className="underline-offset-4 hover:underline" href={`tel:${SITE.phoneIntl}`}>{SITE.phone}</a></li>
-                <li><strong>WhatsApp:</strong> <a className="underline-offset-4 hover:underline" href={waLink("Hello, I'd like to make a reservation at Pilgrims Lodge.")} target="_blank" rel="noopener noreferrer">{SITE.whatsapp}</a></li>
+                <li><strong>WhatsApp:</strong> <a className="underline-offset-4 hover:underline" href={waLink("Hello, I'd like to make a reservation at Pilgrims Guest House.")} target="_blank" rel="noopener noreferrer">{SITE.whatsapp}</a></li>
                 <li><strong>Email:</strong> <a className="underline-offset-4 hover:underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
               </ul>
             </div>
             <blockquote className="rounded-2xl border border-border bg-card p-6 font-display text-lg italic">
               “In returning and rest shall ye be saved; in quietness and in confidence shall be your strength.”
-              <footer className="mt-2 text-xs uppercase tracking-[0.2em] not-italic text-[color:var(--gold)]">Isaiah 30:15</footer>
+              <footer className="mt-2 text-xs uppercase tracking-[0.2em] not-italic text-gold">Isaiah 30:15</footer>
             </blockquote>
           </aside>
         </div>

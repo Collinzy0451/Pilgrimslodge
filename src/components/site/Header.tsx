@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.jpeg";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -17,11 +18,17 @@ export function Header() {
             className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-[color:var(--deep)] shadow-[var(--shadow-soft)]"
             style={{ background: "var(--gradient-gold)" }}
           >
-            <span className="font-display text-xl font-semibold leading-none">P</span>
+            <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold overflow-hidden">
+  <img
+    src={logo}
+    alt="Pilgrims Guest House Logo"
+    className="w-full h-full object-cover"
+  />
+</span>
           </span>
           <span className="min-w-0">
             <span className="block font-display text-lg leading-tight tracking-tight text-foreground sm:text-xl">
-              Pilgrims Lodge
+              Pilgrims Guest House
             </span>
             <span className="block truncate text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
               A Christian Retreat

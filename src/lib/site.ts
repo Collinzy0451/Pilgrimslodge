@@ -1,8 +1,8 @@
 export const SITE = {
-  name: "Pilgrims Lodge",
+  name: "Pilgrims Guest House",
   owner: "Maranatha Beauty For Ashes Club (MBEFAC)",
   tagline: "A Christian Retreat & Spiritual Haven",
-  address: "No. 8 Ediaye Street, Off Ilen Road, Evbakhua, Ekpoma, Edo State, Nigeria",
+  address: "No. 5 Ediaye Street, Off Ilen Road, Evbakhua, Ekpoma, Edo State, Nigeria",
   phone: "07061602778",
   phoneIntl: "+2347061602778",
   whatsapp: "08055934725",

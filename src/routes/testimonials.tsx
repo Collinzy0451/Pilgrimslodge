@@ -6,9 +6,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Testimonies — Pilgrims Lodge" },
-      { name: "description", content: "Hear from guests, churches and ministers who have experienced rest and renewal at Pilgrims Lodge." },
-      { property: "og:title", content: "Testimonies — Pilgrims Lodge" },
+      { title: "Testimonies — Pilgrims Guest House" },
+      { name: "description", content: "Hear from guests, churches and ministers who have experienced rest and renewal at Pilgrims Guest House." },
+      { property: "og:title", content: "Testimonies — Pilgrims Guest House" },
     ],
   }),
   component: Testimonials,

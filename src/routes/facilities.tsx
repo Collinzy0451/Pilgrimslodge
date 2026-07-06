@@ -9,9 +9,9 @@ import gardenImg from "@/assets/garden-path.jpg";
 export const Route = createFileRoute("/facilities")({
   head: () => ({
     meta: [
-      { title: "Facilities & Amenities — Pilgrims Lodge" },
-      { name: "description", content: "Comfortable rooms, conference & meeting halls, study areas, dining, secure premises and ample parking at Pilgrims Lodge." },
-      { property: "og:title", content: "Facilities & Amenities — Pilgrims Lodge" },
+      { title: "Facilities & Amenities — Pilgrims Guest House" },
+      { name: "description", content: "Comfortable rooms, conference & meeting halls, study areas, dining, secure premises and ample parking at Pilgrims Guest House." },
+      { property: "og:title", content: "Facilities & Amenities — Pilgrims Guest House" },
     ],
   }),
   component: Facilities,

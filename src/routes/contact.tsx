@@ -8,9 +8,9 @@ import { SITE, mailLink, waLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Pilgrims Lodge, Ekpoma" },
-      { name: "description", content: "Contact Pilgrims Lodge in Ekpoma, Edo State. Phone, WhatsApp, email and directions." },
-      { property: "og:title", content: "Contact Pilgrims Lodge" },
+      { title: "Contact — Pilgrims Guest House, Ekpoma" },
+      { name: "description", content: "Contact Pilgrims Guest House in Ekpoma, Edo State. Phone, WhatsApp, email and directions." },
+      { property: "og:title", content: "Contact Pilgrims Guest House" },
     ],
   }),
   component: Contact,
@@ -28,7 +28,7 @@ function Contact() {
     e.preventDefault();
     if (!valid) return;
     const body = [
-      `*Contact message — Pilgrims Lodge*`,
+      `*Contact message — Pilgrims Guest House*`,
       ``,
       `• Name: ${form.name}`,
       `• Email: ${form.email || "—"}`,
@@ -63,7 +63,7 @@ function Contact() {
                 <p className="text-sm text-muted-foreground">{SITE.phone}</p>
               </div>
             </a>
-            <a href={waLink("Hello, I would like to make an enquiry about Pilgrims Lodge.")} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
+            <a href={waLink("Hello, I would like to make an enquiry about Pilgrims Guest House.")} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
               <MessageCircle className="mt-1 h-5 w-5 text-[color:var(--whatsapp)]" />
               <div>
                 <h3 className="font-display text-lg">WhatsApp</h3>
@@ -124,7 +124,7 @@ function Contact() {
         <div className="container-prose mt-16">
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)]">
             <iframe
-              title="Pilgrims Lodge location"
+              title="Pilgrims Guest House location"
               src={SITE.mapEmbed}
               width="100%"
               height="420"

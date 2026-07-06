@@ -7,9 +7,9 @@ import { waLink, mailLink } from "@/lib/site";
 export const Route = createFileRoute("/retreats")({
   head: () => ({
     meta: [
-      { title: "Christian Retreats & Conferences — Pilgrims Lodge" },
-      { name: "description", content: "Prayer, fasting, Bible study, ministers' retreats, leadership and youth retreats hosted at Pilgrims Lodge, Ekpoma." },
-      { property: "og:title", content: "Christian Retreats at Pilgrims Lodge" },
+      { title: "Christian Retreats & Conferences — Pilgrims Guest House" },
+      { name: "description", content: "Prayer, fasting, Bible study, ministers' retreats, leadership and youth retreats hosted at Pilgrims Guest House, Ekpoma." },
+      { property: "og:title", content: "Christian Retreats at Pilgrims Guest House" },
     ],
   }),
   component: Retreats,
@@ -32,7 +32,7 @@ function Retreats() {
       <PageHero
         eyebrow="Retreats"
         title="Set apart. Refreshed. Renewed."
-        description="Pilgrims Lodge hosts a wide range of Christian retreats — from personal solitude to congregation-wide gatherings."
+        description="Pilgrims Guest House hosts a wide range of Christian retreats — from personal solitude to congregation-wide gatherings."
       />
 
       <section className="section-pad">
@@ -63,15 +63,15 @@ function Retreats() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href={waLink("Hello, I would like to BOOK A RETREAT at Pilgrims Lodge.\n\n• Type of retreat: \n• Group size: \n• Preferred dates: \n• Contact person: ")}
+                  href={waLink("Hello, I would like to BOOK A RETREAT at Pilgrims Guest House.\n\n• Type of retreat: \n• Group size: \n• Preferred dates: \n• Contact person: ")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[color:var(--gold)] px-6 py-3 text-sm font-semibold text-[color:var(--deep)]"
+                  className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-deep"
                 >
                   Book via WhatsApp
                 </a>
                 <a
-                  href={mailLink("Retreat booking enquiry", "Hello,\n\nI would like to book a retreat at Pilgrims Lodge.\n\n• Type of retreat:\n• Group size:\n• Preferred dates:\n• Contact person:\n\nThank you.")}
+                  href={mailLink("Retreat booking enquiry", "Hello,\n\nI would like to book a retreat at Pilgrims Guest House.\n\n• Type of retreat:\n• Group size:\n• Preferred dates:\n• Contact person:\n\nThank you.")}
                   className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
                 >
                   Email us

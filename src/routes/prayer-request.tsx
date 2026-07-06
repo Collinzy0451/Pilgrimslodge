@@ -9,9 +9,9 @@ import prayerImg from "@/assets/prayer-hands.jpg";
 export const Route = createFileRoute("/prayer-request")({
   head: () => ({
     meta: [
-      { title: "Prayer Request — Pilgrims Lodge" },
-      { name: "description", content: "Submit a prayer request to the Pilgrims Lodge / MBEFAC intercessory team. We will agree with you in prayer." },
-      { property: "og:title", content: "Prayer Request — Pilgrims Lodge" },
+      { title: "Prayer Request — Pilgrims Guest House" },
+      { name: "description", content: "Submit a prayer request to the Pilgrims Guest House / MBEFAC intercessory team. We will agree with you in prayer." },
+      { property: "og:title", content: "Prayer Request — Pilgrims Guest House" },
     ],
   }),
   component: PrayerPage,

@@ -7,9 +7,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Devotionals & Articles — Pilgrims Lodge" },
-      { name: "description", content: "Devotionals, Bible study notes and retreat reflections from Pilgrims Lodge and MBEFAC." },
-      { property: "og:title", content: "Devotionals — Pilgrims Lodge" },
+      { title: "Devotionals & Articles — Pilgrims Guest House" },
+      { name: "description", content: "Devotionals, Bible study notes and retreat reflections from Pilgrims Guest House and MBEFAC." },
+      { property: "og:title", content: "Devotionals — Pilgrims Guest House" },
     ],
   }),
   component: Blog,

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import { NAV, SITE, waLink } from "@/lib/site";
+import logo from "@/assets/logo.jpeg";
 
 export function Footer() {
   return (
@@ -13,9 +14,14 @@ export function Footer() {
               className="grid h-10 w-10 place-items-center rounded-full text-[color:var(--deep)]"
               style={{ background: "var(--gradient-gold)" }}
             >
-              <span className="font-display text-xl font-semibold leading-none">P</span>
-            </span>
-            <span className="font-display text-xl">Pilgrims Lodge</span>
+<span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gold overflow-hidden">
+  <img
+    src={logo}
+    alt="Pilgrims Lodge Logo"
+    className="w-full h-full object-cover"
+  />
+</span>            </span>
+            <span className="font-display text-xl">Pilgrims Guest House</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-white/70">
             A place set apart for rest, prayer, and renewal. Owned and operated by{" "}
@@ -81,7 +87,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-prose flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Pilgrims Lodge — MBEFAC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Pilgrims Guest House — MBEFAC. All rights reserved.</p>
           <p>Built as a place of peace, prayer, and renewal.</p>
         </div>
       </div>

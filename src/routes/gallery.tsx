@@ -14,9 +14,9 @@ import exterior from "@/assets/lodge-exterior.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Pilgrims Lodge" },
-      { name: "description", content: "Photos of Pilgrims Lodge — rooms, conference areas, gardens, dining and prayer spaces." },
-      { property: "og:title", content: "Gallery — Pilgrims Lodge" },
+      { title: "Gallery — Pilgrims Guest House" },
+      { name: "description", content: "Photos of Pilgrims Guest House — rooms, conference areas, gardens, dining and prayer spaces." },
+      { property: "og:title", content: "Gallery — Pilgrims Guest House" },
     ],
   }),
   component: Gallery,
@@ -31,7 +31,7 @@ const items = [
   { src: bible, caption: "Daily devotion" },
   { src: dining, caption: "Dining hall" },
   { src: prayer, caption: "Prayer session" },
-  { src: exterior, caption: "Lodge exterior at dusk" },
+  { src: exterior, caption: "Exterior at dusk" },
 ];
 
 function Gallery() {

@@ -12,9 +12,9 @@ import singleImg from "@/assets/room-single.jpg";
 export const Route = createFileRoute("/rooms")({
   head: () => ({
     meta: [
-      { title: "Rooms & Accommodation — Pilgrims Lodge" },
+      { title: "Rooms & Accommodation — Pilgrims Guest House" },
       { name: "description", content: "Highly comfortable standard rooms for individuals, couples and groups. Reserve your room by WhatsApp or email." },
-      { property: "og:title", content: "Rooms at Pilgrims Lodge" },
+      { property: "og:title", content: "Rooms at Pilgrims Guest House" },
     ],
   }),
   component: Rooms,
@@ -67,7 +67,7 @@ function Rooms() {
           </div>
 
           {/* Search */}
-          <div className="mb-8 flex items-center gap-3 rounded-full border border-border bg-card px-5 py-3 shadow-[var(--shadow-soft)]">
+          <div className="mb-8 flex items-center gap-3 rounded-full border border-border bg-card px-5 py-3 shadow-(--shadow-soft)">
             <Search className="h-4 w-4 text-muted-foreground" />
             <input
               value={q}
@@ -79,12 +79,12 @@ function Rooms() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {filtered.map((r) => (
-              <article key={r.id} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
-                <div className="aspect-[4/3] overflow-hidden">
+              <article key={r.id} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-(--shadow-soft)">
+                <div className="aspect-4/3 overflow-hidden">
                   <img src={r.img} alt={r.name} width={1280} height={896} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--gold)]">{r.id}</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gold">{r.id}</p>
                   <h3 className="mt-2 font-display text-xl">{r.name}</h3>
                   <p className="mt-1 text-xs text-muted-foreground">{r.occupancy}</p>
                   <p className="mt-3 text-sm text-muted-foreground">{r.desc}</p>
@@ -95,15 +95,15 @@ function Rooms() {
                   </ul>
                   <div className="mt-5 flex gap-3">
                     <a
-                      href={waLink(`Hello, I would like to RESERVE ${r.name} (${r.id}) at Pilgrims Lodge.`)}
+                      href={waLink(`Hello, I would like to RESERVE ${r.name} (${r.id}) at Pilgrims Guest House.`)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full bg-[color:var(--deep)] px-4 py-2 text-xs font-semibold text-[color:var(--ivory)]"
+                      className="rounded-full bg-deep px-4 py-2 text-xs font-semibold text-ivory"
                     >
                       Reserve
                     </a>
                     <a
-                      href={mailLink(`Room enquiry: ${r.name} (${r.id})`, `Hello,\n\nI would like to enquire about the ${r.name} (${r.id}) at Pilgrims Lodge.\n\nThank you.`)}
+                      href={mailLink(`Room enquiry: ${r.name} (${r.id})`, `Hello,\n\nI would like to enquire about the ${r.name} (${r.id}) at Pilgrims Guest House  .\n\nThank you.`)}
                       className="rounded-full border border-border px-4 py-2 text-xs font-semibold"
                     >
                       Enquire

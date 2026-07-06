@@ -13,13 +13,13 @@ import confImg from "@/assets/conference-hall.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pilgrims Lodge — Christian Retreat & Accommodation, Ekpoma" },
+      { title: "Pilgrims Guest House — Christian Retreat & Accommodation, Ekpoma" },
       {
         name: "description",
         content:
           "A serene Christian retreat centre in Ekpoma, Edo State. Rooms, prayer & study spaces for churches, ministers, and individuals seeking renewal.",
       },
-      { property: "og:title", content: "Pilgrims Lodge — A Christian Retreat & Spiritual Haven" },
+      { property: "og:title", content: "Pilgrims Guest House — A Christian Retreat & Spiritual Haven" },
       { property: "og:image", content: heroImg },
       { property: "twitter:image", content: heroImg },
     ],
@@ -58,17 +58,17 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <img
           src={heroImg}
-          alt="Peaceful golden sunrise over a Christian retreat lodge"
+          alt="Peaceful golden sunrise over a Christian retreat centre"
           width={1920}
           height={1080}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="container-prose relative grid min-h-[88vh] place-items-center py-24 text-[color:var(--ivory)]">
+        <div className="container-prose relative grid min-h-[88vh] place-items-center py-24 text-ivory">
           <div className="max-w-3xl fade-up">
-            <p className="eyebrow !text-[color:var(--gold-soft)]">
+            <p className="eyebrow text-gold-soft!">
               <span className="gold-rule mr-3" />
-              Pilgrims Lodge · MBEFAC · Ekpoma
+              Pilgrims Guest House · MBEFAC · Ekpoma
             </p>
             <h1 className="heading-display mt-5 text-4xl sm:text-6xl md:text-7xl">
               Be still, and know <span className="italic text-[color:var(--gold-soft)]">that He is God.</span>
@@ -110,7 +110,7 @@ function Home() {
               title={<>A sanctuary for weary pilgrims.</>}
               description={
                 <>
-                  Pilgrims Lodge is owned and operated by {SITE.owner}. We exist to provide
+                  Pilgrims Guest House is owned and operated by {SITE.owner}. We exist to provide
                   believers, churches and ministries with a quiet, comfortable place where the
                   presence of God can be sought without distraction.
                 </>
@@ -177,7 +177,7 @@ function Home() {
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             {featuredRooms.map((r) => (
               <article key={r.name} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-4/3 overflow-hidden">
                   <img src={r.img} alt={r.name} width={1280} height={896} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
@@ -185,10 +185,10 @@ function Home() {
                   <p className="mt-2 text-sm text-muted-foreground">{r.desc}</p>
                   <div className="mt-5 flex gap-3">
                     <a
-                      href={waLink(`Hello, I would like to reserve the ${r.name} at Pilgrims Lodge.`)}
+                      href={waLink(`Hello, I would like to reserve the ${r.name} at Pilgrims Guest House.`)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full bg-[color:var(--deep)] px-4 py-2 text-xs font-semibold text-[color:var(--ivory)]"
+                      className="rounded-full bg-deep px-4 py-2 text-xs font-semibold text-ivory"
                     >
                       Reserve
                     </a>
