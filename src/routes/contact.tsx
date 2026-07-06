@@ -53,25 +53,25 @@ function Contact() {
             <div className="rounded-2xl border border-border bg-card p-6">
               <h3 className="font-display text-xl">Visit us</h3>
               <p className="mt-3 flex gap-3 text-sm text-muted-foreground">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--gold)]" /> {SITE.address}
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> {SITE.address}
               </p>
             </div>
             <a href={`tel:${SITE.phoneIntl}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
-              <Phone className="mt-1 h-5 w-5 text-[color:var(--gold)]" />
+              <Phone className="mt-1 h-5 w-5 text-gold" />
               <div>
                 <h3 className="font-display text-lg">Phone</h3>
                 <p className="text-sm text-muted-foreground">{SITE.phone}</p>
               </div>
             </a>
             <a href={waLink("Hello, I would like to make an enquiry about Pilgrims Guest House.")} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
-              <MessageCircle className="mt-1 h-5 w-5 text-[color:var(--whatsapp)]" />
+              <MessageCircle className="mt-1 h-5 w-5 text-whatsapp" />
               <div>
                 <h3 className="font-display text-lg">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground">{SITE.whatsapp}</p>
               </div>
             </a>
             <a href={`mailto:${SITE.email}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
-              <Mail className="mt-1 h-5 w-5 text-[color:var(--gold)]" />
+              <Mail className="mt-1 h-5 w-5 text-gold" />
               <div>
                 <h3 className="font-display text-lg">Email</h3>
                 <p className="text-sm text-muted-foreground">{SITE.email}</p>
@@ -79,10 +79,10 @@ function Contact() {
             </a>
           </div>
 
-          <form className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] sm:p-8" onSubmit={submit("email")}>
+          <form className="rounded-2xl border border-border bg-card p-6 shadow-(--shadow-soft) sm:p-8" onSubmit={submit("email")}>
             {sent && (
-              <div className="mb-6 flex items-start gap-3 rounded-xl border border-[color:var(--gold)]/40 bg-[color:var(--gold-soft)]/40 p-4 text-sm">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-[color:var(--gold)]" />
+              <div className="mb-6 flex items-start gap-3 rounded-xl border border-(--gold)/40 bg-(--gold-soft)/40 p-4 text-sm">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 text-gold" />
                 <p>Your message is ready to send. Please tap <strong>send</strong> in the app that just opened. We'll respond shortly.</p>
               </div>
             )}

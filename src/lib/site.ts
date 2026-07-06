@@ -3,12 +3,12 @@ export const SITE = {
   owner: "Maranatha Beauty For Ashes Club (MBEFAC)",
   tagline: "A Christian Retreat & Spiritual Haven",
   address: "No. 5 Ediaye Street, Off Ilen Road, Evbakhua, Ekpoma, Edo State, Nigeria",
-  phone: "07061602778",
-  phoneIntl: "+2347061602778",
+  phone: "08036887960",
+  phoneIntl: "08036887960",
   whatsapp: "08055934725",
   // International format for wa.me link (Nigeria +234, drop leading 0)
   whatsappIntl: "2348055934725",
-  email: "asemotabright81@gmail.com",
+  email: "mbefacpilgrimguesthouse@gmail.com",
   // Embedded map iframe URL (no API key needed)
   mapEmbed:
     "https://www.google.com/maps?q=Ediaye+Street+Evbakhua+Ekpoma+Edo+State+Nigeria&output=embed",
