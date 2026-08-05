@@ -54,10 +54,10 @@ function PrayerPage() {
 
       <section className="section-pad">
         <div className="container-prose grid gap-10 lg:grid-cols-[1.2fr,1fr]">
-          <form className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] sm:p-8" onSubmit={submit("email")}>
+          <form className="rounded-2xl border border-border bg-card p-6 shadow-(--shadow-soft) sm:p-8" onSubmit={submit("email")}>
             {sent && (
-              <div className="mb-6 flex items-start gap-3 rounded-xl border border-[color:var(--gold)]/40 bg-[color:var(--gold-soft)]/40 p-4 text-sm">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-[color:var(--gold)]" />
+              <div className="mb-6 flex items-start gap-3 rounded-xl border border-(--gold)/40 bg-(--gold-soft)/40 p-4 text-sm">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 text-gold" />
                 <p>Your request is ready — please tap <strong>send</strong> in the app that just opened. We are praying with you.</p>
               </div>
             )}
@@ -72,7 +72,7 @@ function PrayerPage() {
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70">Your prayer request *</label>
-                <textarea required className={inputCls + " min-h-[180px]"} value={form.request} onChange={update("request")} placeholder="Share whatever is on your heart…" />
+                <textarea required className={inputCls + " min-h-45"} value={form.request} onChange={update("request")} placeholder="Share whatever is on your heart…" />
               </div>
               <label className="sm:col-span-2 flex items-center gap-2 text-sm text-muted-foreground">
                 <input type="checkbox" checked={form.confidential} onChange={update("confidential")} />
@@ -80,7 +80,7 @@ function PrayerPage() {
               </label>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
-              <button type="submit" disabled={!valid} className="inline-flex items-center gap-2 rounded-full bg-[color:var(--deep)] px-6 py-3 text-sm font-semibold text-[color:var(--ivory)] disabled:opacity-50">
+              <button type="submit" disabled={!valid} className="inline-flex items-center gap-2 rounded-full bg-deep px-6 py-3 text-sm font-semibold text-ivory disabled:opacity-50">
                 <Mail className="h-4 w-4" /> Send via Email
               </button>
               <button type="button" disabled={!valid} onClick={submit("whatsapp") as unknown as () => void} className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold disabled:opacity-50">
@@ -90,11 +90,11 @@ function PrayerPage() {
           </form>
 
           <aside className="space-y-6">
-            <img src={prayerImg} alt="Hands folded in prayer over an open Bible" width={1280} height={896} loading="lazy" className="rounded-2xl object-cover shadow-[var(--shadow-soft)]" />
+            <img src={prayerImg} alt="Hands folded in prayer over an open Bible" width={1280} height={896} loading="lazy" className="rounded-2xl object-cover shadow-(--shadow-soft)" />
             <blockquote className="rounded-2xl border border-border bg-muted/40 p-6 font-display text-lg italic">
               “Again I say unto you, That if two of you shall agree on earth as touching any
               thing that they shall ask, it shall be done for them of my Father which is in heaven.”
-              <footer className="mt-3 text-xs uppercase tracking-[0.2em] not-italic text-[color:var(--gold)]">Matthew 18:19</footer>
+              <footer className="mt-3 text-xs uppercase tracking-[0.2em] not-italic text-gold">Matthew 18:19</footer>
             </blockquote>
           </aside>
         </div>

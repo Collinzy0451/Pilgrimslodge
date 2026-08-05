@@ -1,15 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
-import hero from "@/assets/hero-sunrise.jpg";
-import room from "@/assets/room-standard.jpg";
-import single from "@/assets/room-single.jpg";
-import bible from "@/assets/bible-candle.jpg";
-import conf from "@/assets/conference-hall.jpg";
-import garden from "@/assets/garden-path.jpg";
-import prayer from "@/assets/prayer-hands.jpg";
-import dining from "@/assets/dining-hall.jpg";
-import exterior from "@/assets/lodge-exterior.jpg";
+import Compound from "@/assets/compound.jpeg";
+import Room from "@/assets/room5.jpeg";
+import Single from "@/assets/room3.jpeg";
+import Table from "@/assets/table1.jpeg";
+import conf from "@/assets/Hall1.jpeg";
+import Equip from "@/assets/room4.jpeg";
+import Audience from "@/assets/audience.jpeg";
+import Premise from "@/assets/premises.jpeg";
+import exterior from "@/assets/outside.jpeg";
+import doorSign from "@/assets/door1.jpeg";
+import doorpost from "@/assets/door2.jpeg"; 
+import doorIcon from "@/assets/door3.jpeg";
+import door from "@/assets/door4.jpeg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -23,15 +27,19 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { src: hero, caption: "Sunrise over the grounds", span: "lg:col-span-2 lg:row-span-2" },
-  { src: room, caption: "Standard twin room" },
-  { src: single, caption: "Quiet single room" },
-  { src: conf, caption: "Conference hall" },
-  { src: garden, caption: "Garden path" },
-  { src: bible, caption: "Daily devotion" },
-  { src: dining, caption: "Dining hall" },
-  { src: prayer, caption: "Prayer session" },
+  { src: Compound, caption: "Sunrise over the grounds", span: "lg:col-span-2 lg:row-span-2" },
+  { src: Room, caption: "Standard room" },
+  { src: Single, caption: "Quiet single room" },
+  { src: conf, caption: "Meeting hall" },
+  { src: Equip, caption: "Equipped rooms" },
+  { src: Table, caption: "Devotion Table" },
+  { src: Premise, caption: "Serene surroundings" },
+  { src: Audience, caption: "Audience space in the hall" },
   { src: exterior, caption: "Exterior at dusk" },
+  { src: doorSign, caption: "Grow in Faith" },
+  { src: doorpost, caption: "Peace beyond" },
+  { src: doorIcon, caption: "Grace runs the race" },
+  { src: door, caption: "God's love" },
 ];
 
 function Gallery() {
@@ -44,7 +52,7 @@ function Gallery() {
             {items.map((it, i) => (
               <figure
                 key={i}
-                className={`group relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)] ${it.span ?? ""}`}
+                className={`group relative overflow-hidden rounded-2xl border border-border shadow-(--shadow-soft) ${it.span ?? ""}`}
               >
                 <img
                   src={it.src}
@@ -52,7 +60,7 @@ function Gallery() {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
+                <figcaption className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent p-3 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
                   {it.caption}
                 </figcaption>
               </figure>

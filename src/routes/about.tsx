@@ -80,7 +80,7 @@ function About() {
           </div>
 
           <aside className="space-y-6">
-            <img src={bibleImg} alt="Bible and candle" width={1280} height={896} loading="lazy" className="rounded-2xl object-cover shadow-[var(--shadow-soft)]" />
+            <img src={bibleImg} alt="Bible and candle" width={1280} height={896} loading="lazy" className="rounded-2xl object-cover shadow-(--shadow-soft)" />
             <blockquote className="rounded-2xl border border-border bg-muted/50 p-6 font-display text-lg italic">
               “To appoint unto them that mourn in Zion, to give unto them beauty for ashes,
               the oil of joy for mourning, the garment of praise for the spirit of heaviness.”

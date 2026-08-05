@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BedDouble, Car, ShieldCheck, UtensilsCrossed, BookOpenCheck, Wind, Wifi, Users2, TreePine } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
-import confImg from "@/assets/conference-hall.jpg";
-import diningImg from "@/assets/dining-hall.jpg";
-import gardenImg from "@/assets/garden-path.jpg";
+import ConferenceHall from "@/assets/Hall1.jpeg";
+import Premise from "@/assets/premises.jpeg";
+import Compound from "@/assets/outside.jpeg";
 
 export const Route = createFileRoute("/facilities")({
   head: () => ({
@@ -30,9 +30,9 @@ const items = [
 ];
 
 const showcase = [
-  { img: confImg, title: "Conference Hall", desc: "Seating for large gatherings, with podium and clear sightlines." },
-  { img: diningImg, title: "Dining Hall", desc: "Communal dining for retreats and conferences." },
-  { img: gardenImg, title: "Prayer Grounds", desc: "Quiet outdoor paths for walking prayer and reflection." },
+  { img: ConferenceHall, title: "Spacious Meeting Hall", desc: "Seating for large gatherings, with visual display and clear sightlines." },
+  { img: Premise, title: "Serene and Spacious Surroundings", desc: "Calm and peaceful surroundings for a restful stay. Space for parking" },
+  { img: Compound, title: "Secure Environment", desc: "Gated grounds for the peace of mind of every guest." },
 ];
 
 function Facilities() {
@@ -47,8 +47,8 @@ function Facilities() {
         <div className="container-prose">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((f) => (
-              <div key={f.title} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)]">
-                <span className="grid h-12 w-12 place-items-center rounded-xl text-[color:var(--deep)]" style={{ background: "var(--gradient-gold)" }}>
+              <div key={f.title} className="rounded-2xl border border-border bg-card p-6 shadow-(--shadow-soft)">
+                <span className="grid h-12 w-12 place-items-center rounded-xl text-deep" style={{ background: "var(--gradient-gold)" }}>
                   <f.icon className="h-6 w-6" />
                 </span>
                 <h3 className="mt-5 font-display text-xl">{f.title}</h3>
@@ -59,8 +59,8 @@ function Facilities() {
 
           <div className="mt-16 grid gap-6 md:grid-cols-3">
             {showcase.map((s) => (
-              <figure key={s.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)]">
-                <img src={s.img} alt={s.title} width={1280} height={896} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+              <figure key={s.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-(--shadow-soft)">
+                <img src={s.img} alt={s.title} width={1280} height={896} loading="lazy" className="aspect-4/3 w-full object-cover" />
                 <figcaption className="p-5">
                   <h3 className="font-display text-lg">{s.title}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>

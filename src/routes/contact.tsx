@@ -56,21 +56,21 @@ function Contact() {
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> {SITE.address}
               </p>
             </div>
-            <a href={`tel:${SITE.phoneIntl}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
+            <a href={`tel:${SITE.phoneIntl}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-gold">
               <Phone className="mt-1 h-5 w-5 text-gold" />
               <div>
                 <h3 className="font-display text-lg">Phone</h3>
                 <p className="text-sm text-muted-foreground">{SITE.phone}</p>
               </div>
             </a>
-            <a href={waLink("Hello, I would like to make an enquiry about Pilgrims Guest House.")} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
+            <a href={waLink("Hello, I would like to make an enquiry about Pilgrims Guest House.")} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-gold">
               <MessageCircle className="mt-1 h-5 w-5 text-whatsapp" />
               <div>
                 <h3 className="font-display text-lg">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground">{SITE.whatsapp}</p>
               </div>
             </a>
-            <a href={`mailto:${SITE.email}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-[color:var(--gold)]">
+            <a href={`mailto:${SITE.email}`} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-gold">
               <Mail className="mt-1 h-5 w-5 text-gold" />
               <div>
                 <h3 className="font-display text-lg">Email</h3>
@@ -107,14 +107,14 @@ function Contact() {
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70">Message *</label>
-                <textarea required className={inputCls + " min-h-[140px]"} value={form.message} onChange={update("message")} />
+                <textarea required className={inputCls + " min-h-35"} value={form.message} onChange={update("message")} />
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
-              <button type="submit" disabled={!valid} className="inline-flex items-center gap-2 rounded-full bg-[color:var(--deep)] px-6 py-3 text-sm font-semibold text-[color:var(--ivory)] disabled:opacity-50">
+              <button type="submit" disabled={!valid} className="inline-flex items-center gap-2 rounded-full bg-deep px-6 py-3 text-sm font-semibold text-ivory disabled:opacity-50">
                 <Mail className="h-4 w-4" /> Send via Email
               </button>
-              <button type="button" disabled={!valid} onClick={submit("whatsapp") as unknown as () => void} className="inline-flex items-center gap-2 rounded-full bg-[color:var(--whatsapp)] px-6 py-3 text-sm font-semibold text-white disabled:opacity-50">
+              <button type="button" disabled={!valid} onClick={submit("whatsapp") as unknown as () => void} className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-sm font-semibold text-white disabled:opacity-50">
                 <MessageCircle className="h-4 w-4" /> Send via WhatsApp
               </button>
             </div>
@@ -122,7 +122,7 @@ function Contact() {
         </div>
 
         <div className="container-prose mt-16">
-          <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)]">
+          <div className="overflow-hidden rounded-2xl border border-border shadow-(--shadow-soft)">
             <iframe
               title="Pilgrims Guest House location"
               src={SITE.mapEmbed}

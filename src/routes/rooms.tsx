@@ -8,6 +8,12 @@ import { PageHero } from "@/components/site/PageHero";
 import { waLink, mailLink } from "@/lib/site";
 import roomImg from "@/assets/room-standard.jpg";
 import singleImg from "@/assets/room-single.jpg";
+import SpaciousRoom from "@/assets/room2.jpeg";
+import Singleroom from "@/assets/room3.jpeg";
+import ExclusiveRoom from "@/assets/room1.jpeg";
+import QuietRoom from "@/assets/room4.jpeg";
+import ConferenceHall from "@/assets/Hall1.jpeg";
+import MeetingHall from "@/assets/Hall2.jpeg";
 
 export const Route = createFileRoute("/rooms")({
   head: () => ({
@@ -23,12 +29,12 @@ export const Route = createFileRoute("/rooms")({
 type Room = { id: string; name: string; img: string; occupancy: string; features: string[]; desc: string };
 
 const rooms: Room[] = [
-  { id: "STD-01", name: "Standard Twin Room", img: roomImg, occupancy: "Up to 2 guests", features: ["Twin beds","Quiet wing","En-suite"], desc: "Two restful beds, soft natural light and a peaceful atmosphere — perfect for retreat partners." },
-  { id: "STD-02", name: "Standard Single Room", img: singleImg, occupancy: "1 guest", features: ["Single bed","Study desk","En-suite"], desc: "A simple, still room set apart for solo prayer, journaling and personal communion with God." },
-  { id: "STD-03", name: "Standard Double Room", img: roomImg, occupancy: "1–2 guests", features: ["Double bed","Reading chair","En-suite"], desc: "Comfortable double bed in a calm room for ministers and couples on retreat." },
-  { id: "STD-04", name: "Standard Family Room", img: roomImg, occupancy: "Up to 3 guests", features: ["Extra bed","Quiet wing","En-suite"], desc: "Spacious enough for a small family or three roommates attending a conference." },
-  { id: "STD-05", name: "Standard Quiet Room", img: singleImg, occupancy: "1 guest", features: ["Single bed","Garden view","En-suite"], desc: "A serene corner room with a garden view — ideal for fasting and meditation." },
-  { id: "STD-06", name: "Standard Twin Room", img: roomImg, occupancy: "Up to 2 guests", features: ["Twin beds","Wardrobe","En-suite"], desc: "A bright twin room near the conference wing, suited for delegates and ministry teams." },
+  { id: "STD-01", name: "Standard Spacious Room", img: SpaciousRoom, occupancy: "Up to 2 guests", features: ["Big beds","Study desk","En-suite"], desc: "Spacious and filled with natural light and a peaceful atmosphere — perfect for retreat partners." },
+  { id: "STD-02", name: "Standard Single Room", img: ExclusiveRoom, occupancy: "1 guest", features: ["Single bed","Quiet wing","En-suite"], desc: "A simple, still room set apart for solo prayer, journaling and personal communion with God." },
+  { id: "STD-03", name: "Exclusive Room", img: Singleroom, occupancy: "Up to 2 or more guests", features: ["Standard bedding","Reading chair","En-suite"], desc: "Comfortable and spacious bed in a calm room for ministers and couples on retreat." },
+  { id: "STD-04", name: "Standard Spacious Hall", img: ConferenceHall, occupancy: "Multiple attendees", features: ["Hall","Visual Display","Spacious Audience"], desc: "Spacious area for attending a conference." },
+  { id: "STD-05", name: "Standard Quiet Room", img: QuietRoom, occupancy: "1 guest", features: ["Single bed","Garden view","En-suite"], desc: "A serene corner room — ideal for fasting and meditation." },
+  { id: "STD-06", name: "Spacious Meeting Hall", img: MeetingHall, occupancy: "More Than 15 People", features: ["Meeting Hall","Projector","Spacious Audience"], desc: "A large, well-equipped space for hosting meetings and events." },
 ];
 
 const amenityIcons = [
